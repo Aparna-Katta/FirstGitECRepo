@@ -1,0 +1,43 @@
+<testConfigurations>
+	<!-- Keyword driven configurations
+		1. Application - Name of the Application on which Test is performing
+		2. URL - Application URL
+		3. browser - Name of the browser(can be Chrome, IE,FF)
+		4. testDataSource - Module testdata sheet
+		5. ProductType - Application client type - US/UK
+		6. Module - Name of the module
+		7. Userlogin - Login credentils of the User
+		8. UserPWD
+		9. Patientsurname/Lastname - Surname of the patient
+		10. PatientForename/Firstname - Forename of the patient 
+		11. DBServer - Name of the DB Server
+		12. DBName - Name of the Database name
+		13.	-->	
+				
+	<testConfig run="true">
+			<Application>ProductUK</Application>
+			<URL>http://RDSAUTO/Excelicare</URL>
+			<browser>Chrome</browser>											
+			<testDataSource>E:\\Ax Automation Selenium\\Scripts\\ECV6_AllModules\\dataEngine\\Multilingual.xls</testDataSource>
+			<ProductType>UK</ProductType>
+			<Module>Login</Module>
+			<UserLogin>henry</UserLogin>
+			<UserPWD>admin$</UserPWD>
+			<PatientSurname>James</PatientSurname>
+			<PatientForename>Eric</PatientForename>
+			<DBServer>192.168.100.143</DBServer>
+			<DBName>ExceliDB_v64NASH_TEST</DBName>
+			<AdhocDBServer>192.168.100.144</AdhocDBServer>
+			<AdhocDBName>AdhocReportsDB_v64UK_TEST</AdhocDBName>
+			<mailfrom>aparna.katta@excelicare.com</mailfrom>
+			<mailrecipients>aparna.katta@excelicare.com</mailrecipients> 
+			<PRISMFields>All</PRISMFields>
+			<Otherclinician>walker</Otherclinician>
+			<IsMultilingual>No</IsMultilingual>
+			<LanguageCode>en-UK</LanguageCode>
+			<GridEnabled>No</GridEnabled>
+			<GridNodeIp>192.168.103.122</GridNodeIp>
+			<GridPort>5566</GridPort>
+			<LoggingLevel>Off</LoggingLevel>
+	</testConfig>
+</testConfigurations>
